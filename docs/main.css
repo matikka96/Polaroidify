@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* outline: 1px solid red; */
+}
+
+body {
+  background-color: darkslategray;
+  font-family: sans-serif;
+}
+
+#container {
+  padding: 20px;
+  display: block;
+  /* max-width: 300px; */
+}
+#navbar {
+  background-color: brown;
+}
+#heading {
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+#polaroid-frame {
+  display: block;
+  padding: 20px;
+  background-color: seashell;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#img-container {
+  width: 100%;
+  background-color: lightgrey;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-absolute {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#input-img {
+  opacity: 0;
+  z-index: 1;
+}
+#selected-img {
+  background-size: cover;
+  background-position: center;
+  box-shadow: inherit;
+  border-radius: inherit;
+}
+#hint-img {
+  text-align: center;
+  line-height: ;
+}
+#polaroid-text {
+  text-align: center;
+  font-family: "Caveat";
+  color: darkblue;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+#button-save {
+  background-color: brown;
+  color: white;
+  padding: 0 10px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  width: 100px;
+  margin: 20px auto;
+}
