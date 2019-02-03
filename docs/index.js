@@ -26,21 +26,15 @@ function fileUpload(input) {
         e.target.result
       })`;
     };
-
     reader.readAsDataURL(input.files[0]);
   }
 }
 function downloadPolaroid() {
-  // html2canvas(document.getElementById("container"), {
-  //   scale: 2,
-  //   backgroundColor: null
-  // }).then(function(canvas) {
-  //   document.body.appendChild(canvas);
-  //   canvas.toBlob(function(blob) {
-  //     saveAs(blob, "image.png");
-  //   });
-  // });
   domtoimage.toBlob(document.getElementById("container")).then(function(blob) {
-    window.saveAs(blob, "test.png");
+    window.saveAs(blob, `Polaroidify-${Date.now()}`);
   });
+  // htmlToImage.toBlob(document.getElementById('my-node'))
+  //   .then(function (blob) {
+  //     window.saveAs(blob, 'my-node.png');
+  //   });
 }

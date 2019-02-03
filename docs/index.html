@@ -6,7 +6,7 @@
     <title>Polaroid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <!-- Import Bootstrap -->
     <link
       rel="stylesheet"
@@ -29,18 +29,11 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Import Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet" />
-  </head>
-
+  
   <body class="bg-dark" onresize="updateParams()" onload="updateParams()">
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-danger">
       <span class="navbar-brand mx-auto mb-0 h1">Polaroidify</span>
     </nav>
-    <!-- <nav id="navbar">
-      <h1 id="heading">Polaroidify</h1>
-    </nav> -->
     <div class=" " id="app">
       <div class="p-4" id="container">
         <div id="polaroid-frame">
@@ -68,7 +61,7 @@
             aria-expanded="false"
             aria-controls="collapseExample"
           >
-            Settings
+            About
           </button>
           <button class="btn btn-danger right" onclick="downloadPolaroid()">
             Download
@@ -76,9 +69,7 @@
         </div>
         <div class="collapse" id="collapseExample">
           <div class="card card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-            richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
-            anderson cred nesciunt sapiente ea proident.
+            <a href="https://github.com/matikka96" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
