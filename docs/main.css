@@ -1,18 +1,26 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  /* outline: 1px solid red; */
 }
 
 body {
   background-color: darkslategray;
   font-family: sans-serif;
 }
-
+#app {
+  margin: 0 auto;
+  max-width: 400px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  /* transform: translate(calc(50% - 200px)); */
+}
 #container {
-  padding: 20px;
   display: block;
-  /* max-width: 300px; */
+  /* padding: 20px; */
+  max-width: inherit;
 }
 #navbar {
   background-color: brown;
@@ -59,9 +67,10 @@ body {
   line-height: ;
 }
 #polaroid-text {
+  transform: rotate(-3deg);
   text-align: center;
   font-family: "Caveat";
-  color: darkblue;
+  color: black;
   width: 100%;
   background-color: transparent;
   border: none;

@@ -11,7 +11,6 @@ function updateParams() {
   const textContainer = document.getElementById("text-container");
   text.style.fontSize = `${padding * 1.8}px`;
   text.style.lineHeight = `${(frame.scrollWidth * 2.1) / 8.9}px`;
-  text.style.transform = "rotate(-3deg)";
 
   // Image dimensions
   const imageContainer = document.getElementById("img-container");
@@ -32,11 +31,16 @@ function fileUpload(input) {
   }
 }
 function downloadPolaroid() {
-  // domtoimage.toSvg(document.getElementById("container")).then(function(dataUrl) {
-  //   window.saveAs(dataUrl, "test.svg");
+  // html2canvas(document.getElementById("container"), {
+  //   scale: 2,
+  //   backgroundColor: null
+  // }).then(function(canvas) {
+  //   document.body.appendChild(canvas);
+  //   canvas.toBlob(function(blob) {
+  //     saveAs(blob, "image.png");
+  //   });
   // });
-  domtoimage.toBlob(document.getElementById('container'))
-    .then(function (blob) {
-      window.saveAs(blob, 'test.png');
-    });
+  domtoimage.toBlob(document.getElementById("container")).then(function(blob) {
+    window.saveAs(blob, "test.png");
+  });
 }
